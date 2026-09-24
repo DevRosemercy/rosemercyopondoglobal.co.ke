@@ -1,0 +1,1587 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  
+  <!-- Primary Meta Tags -->
+  <title>Rosemercy Opondo | TVETA Tutor, Developer, Designer & Author</title>
+  <meta name="title" content="Rosemercy Opondo | TVETA Tutor, Developer, Designer & Author" />
+  <meta name="description" content="Official platform of Rosemercy Opondo. TVETA Registered Tutor & CBET Lecturer (Home Economics), Full-Stack Software Developer, Bespoke Fashion Designer, and Author." />
+  <meta name="keywords" content="Rosemercy Opondo, TVETA Tutor Kenya, CBET Home Economics, Software Developer Kenya, Fashion Designer, The Man Who Planted Trees, Rosemercy Develops" />
+  <meta name="author" content="Rosemercy Opondo" />
+  <meta name="theme-color" content="#2563eb" />
+
+  <!-- PWA Settings -->
+  <link rel="manifest" id="manifestPlaceholder" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="Rosemercy Global" />
+
+  <!-- Open Graph / Facebook / LinkedIn -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://rosemercyopondo.co.ke/" />
+  <meta property="og:title" content="Rosemercy Opondo | TVETA Tutor, Software Engineer & Author" />
+  <meta property="og:description" content="Integrated educational leadership, CBET Home Economics instruction, full-stack web applications, and published literature." />
+
+  <!-- Google Fonts & FontAwesome -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Fira+Code:wght@400;500;600&family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..800&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Source+Sans+3:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brandDark: '#2A113E',
+            brandPurple: '#512B58',
+            brandAccent: '#7A1CAC',
+            brandLavender: '#F3E8FF',
+            brandLightBg: '#FAF5FF',
+            brandSlate: '#2B2420',
+            brandGold: '#D97706',
+            primary: '#2563eb',
+            primaryHover: '#1d4ed8'
+          },
+          fontFamily: {
+            sans: ['Source Sans 3', 'sans-serif'],
+            display: ['Plus Jakarta Sans', 'sans-serif'],
+            serif: ['Fraunces', 'Georgia', 'serif'],
+            editorial: ['Playfair Display', 'serif'],
+            mono: ['Fira Code', 'monospace'],
+            cinzel: ['Cinzel', 'serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      font-family: 'Source Sans 3', sans-serif;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    h1, h2, h3, h4, h5, h6, .font-heading {
+      font-family: 'Fraunces', Georgia, serif;
+    }
+    .font-subheading {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+    .font-editorial-title {
+      font-family: 'Playfair Display', serif;
+    }
+    .font-tech-code {
+      font-family: 'Fira Code', monospace;
+    }
+    .font-brand-title {
+      font-family: 'Cinzel', serif;
+    }
+    .custom-scrollbar::-webkit-scrollbar {
+      width: 6px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-track {
+      background: transparent;
+    }
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+      background: #7A1CAC;
+      border-radius: 3px;
+    }
+    .file-preview {
+      margin-top: 10px;
+      max-width: 150px;
+      max-height: 150px;
+      object-fit: cover;
+      border-radius: 6px;
+      display: none;
+    }
+  </style>
+
+  <!-- Dynamic PWA Manifest & Service Worker Script -->
+  <script>
+    const manifestData = {
+      "name": "Rosemercy Opondo Global",
+      "short_name": "Rosemercy",
+      "start_url": "./",
+      "display": "standalone",
+      "background_color": "#FAF5FF",
+      "theme_color": "#2563eb",
+      "description": "Rosemercy Opondo - TVETA Registered Tutor, Software Engineer, Designer & Author",
+      "icons": [
+        {
+          "src": "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%232A113E'/><text x='50' y='65' font-size='50' font-family='serif' fill='%23F3E8FF' text-anchor='middle'>R</text></svg>",
+          "sizes": "192x192",
+          "type": "image/svg+xml"
+        },
+        {
+          "src": "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%232A113E'/><text x='50' y='65' font-size='50' font-family='serif' fill='%23F3E8FF' text-anchor='middle'>R</text></svg>",
+          "sizes": "512x512",
+          "type": "image/svg+xml"
+        }
+      ]
+    };
+    const stringManifest = JSON.stringify(manifestData);
+    const blob = new Blob([stringManifest], {type: 'application/json'});
+    const manifestURL = URL.createObjectURL(blob);
+    document.addEventListener("DOMContentLoaded", () => {
+      document.getElementById('manifestPlaceholder').setAttribute('href', manifestURL);
+    });
+
+    if ('serviceWorker' in navigator) {
+      const swCode = `
+        const CACHE_NAME = 'rosemercy-v3';
+        self.addEventListener('install', (e) => {
+          self.skipWaiting();
+        });
+        self.addEventListener('activate', (e) => {
+          return self.clients.claim();
+        });
+        self.addEventListener('fetch', (e) => {
+          e.respondWith(
+            fetch(e.request).catch(() => caches.match(e.request))
+          );
+        });
+      `;
+      const swBlob = new Blob([swCode], { type: 'application/javascript' });
+      const swUrl = URL.createObjectURL(swBlob);
+      navigator.serviceWorker.register(swUrl).catch(err => console.log('SW Registration Notice:', err));
+    }
+  </script>
+
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Rosemercy Opondo",
+    "jobTitle": "TVETA Registered Tutor, Software Engineer & Author",
+    "email": "rosemercyopondo0@gmail.com",
+    "telephone": "+254114277839",
+    "url": "https://rosemercyopondo.co.ke/",
+    "knowsAbout": [
+      "TVETA CBET Curricula",
+      "Home Economics",
+      "Food & Beverage Management",
+      "Nutrition & Dietetics",
+      "Full Stack Software Development",
+      "React",
+      "Tailwind CSS",
+      "Bespoke Fashion Design"
+    ],
+    "almaMater": [
+      {
+        "@type": "EducationalOrganization",
+        "name": "Kenyatta University",
+        "description": "Bachelor of Education (Home Economics)"
+      },
+      {
+        "@type": "EducationalOrganization",
+        "name": "Moringa School",
+        "description": "Software Engineering & Generative AI"
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body class="flex flex-col min-h-screen bg-brandLightBg dark:bg-slate-950 text-brandSlate dark:text-gray-100 transition-colors duration-300">
+
+  <!-- TOP BRAND UTILITY BAR -->
+  <div class="bg-brandDark text-brandLavender text-xs py-2 px-4 border-b border-brandPurple/40">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+      <div class="flex items-center gap-4 flex-wrap justify-center sm:justify-start font-subheading">
+        <span class="flex items-center gap-1.5"><i class="fa-solid fa-graduation-cap text-brandAccent"></i> TVETA Registered Tutor</span>
+        <span class="hidden md:inline">|</span>
+        <a href="mailto:rosemercyopondo0@gmail.com" class="hover:text-white transition"><i class="fa-solid fa-envelope text-brandAccent"></i> rosemercyopondo0@gmail.com</a>
+        <span class="hidden md:inline">|</span>
+        <a href="https://wa.me/254114277839" target="_blank" class="hover:text-white transition"><i class="fa-brands fa-whatsapp text-emerald-400"></i> 0114 277 839</a>
+      </div>
+      <div class="flex items-center gap-3">
+        <!-- Dark/Light Theme Toggle -->
+        <button onclick="toggleDarkMode()" class="text-brandLavender hover:text-amber-300 transition text-xs flex items-center gap-1.5 px-2 py-0.5 rounded bg-brandPurple/50">
+          <i class="fa-solid fa-sun text-amber-400 dark:hidden"></i>
+          <i class="fa-solid fa-moon text-indigo-300 hidden dark:inline"></i>
+          <span id="themeToggleText" class="text-[11px] font-subheading">Light</span>
+        </button>
+        <button id="pwaInstallBtn" onclick="triggerPwaInstall()" class="hidden bg-brandAccent text-white px-2.5 py-0.5 rounded text-[11px] font-subheading font-medium hover:bg-purple-600 transition flex items-center gap-1">
+          <i class="fa-solid fa-download"></i> Install App
+        </button>
+        <button onclick="toggleAdminPanel()" class="bg-blue-600 hover:bg-blue-700 text-white transition text-[11px] font-subheading px-2.5 py-0.5 rounded flex items-center gap-1">
+          <i class="fa-solid fa-sliders"></i> Toggle Admin Dashboard
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVIGATION HEADER -->
+  <header class="sticky top-0 z-40 bg-white/95 dark:bg-slate-900/95 backdrop-blur-md border-b border-purple-100 dark:border-slate-800 shadow-sm transition-colors duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 py-3.5 flex justify-between items-center">
+      <a href="#home" onclick="navTo('home')" class="group flex items-center gap-3">
+        <img src="WhatsApp Image 2026-09-22 at 3.01.54 PM.jpeg" alt="Rosemercy Opondo" class="w-10 h-10 rounded-full object-cover border-2 border-brandAccent shadow-sm" onerror="this.src='https://via.placeholder.com/150'" />
+        <div>
+          <span class="block font-brand-title text-lg font-bold text-brandDark dark:text-purple-200 leading-tight tracking-wider">ROSEMERCY OPONDO</span>
+          <span class="block text-[10px] font-tech-code text-brandPurple dark:text-purple-400 font-semibold tracking-wide">TVETA TUTOR · DEVELOPER · AUTHOR</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="hidden lg:flex items-center gap-6 text-sm font-subheading font-medium text-brandDark dark:text-gray-200">
+        <a href="#home" onclick="navTo('home')" class="nav-link hover:text-brandAccent dark:hover:text-purple-400 transition py-1">Home</a>
+        <a href="#educator" onclick="navTo('educator')" class="nav-link hover:text-brandAccent dark:hover:text-purple-400 transition py-1">TVETA & Education</a>
+        <a href="#tech" onclick="navTo('tech')" class="nav-link hover:text-brandAccent dark:hover:text-purple-400 transition py-1">Software & Tech</a>
+        <a href="#fashion" onclick="navTo('fashion')" class="nav-link hover:text-brandAccent dark:hover:text-purple-400 transition py-1">Fashion Design</a>
+        <a href="#gallery" onclick="navTo('gallery')" class="nav-link hover:text-brandAccent dark:hover:text-purple-400 transition py-1">Gallery</a>
+        <a href="#author" onclick="navTo('author')" class="nav-link hover:text-brandAccent dark:hover:text-purple-400 transition py-1">Author & Books</a>
+        <a href="#blog" onclick="navTo('blog')" class="nav-link hover:text-brandAccent dark:hover:text-purple-400 transition py-1">Articles</a>
+        <a href="#contact" onclick="navTo('contact')" class="nav-link hover:text-brandAccent dark:hover:text-purple-400 transition py-1">Contact</a>
+      </nav>
+
+      <!-- Desktop Action CTA Buttons -->
+      <div class="hidden lg:flex items-center gap-2 font-subheading">
+        <button onclick="openCtaModal('whatsapp')" class="bg-emerald-600 hover:bg-emerald-700 text-white px-3 py-2 rounded-lg text-xs font-semibold shadow-sm transition flex items-center gap-1.5">
+          <i class="fa-brands fa-whatsapp text-sm"></i> WhatsApp
+        </button>
+        <button onclick="openCtaModal('phone')" class="bg-brandDark dark:bg-purple-900 hover:bg-brandPurple text-white px-3 py-2 rounded-lg text-xs font-semibold shadow-sm transition flex items-center gap-1.5">
+          <i class="fa-solid fa-phone text-xs"></i> Call
+        </button>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <button onclick="toggleMobileMenu()" class="lg:hidden p-2 text-brandDark dark:text-gray-200 hover:text-brandAccent focus:outline-none">
+        <i class="fa-solid fa-bars text-xl" id="menuIcon"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Slideout Menu -->
+    <div id="mobileMenu" class="hidden lg:hidden bg-white dark:bg-slate-900 border-b border-purple-100 dark:border-slate-800 px-4 py-4 space-y-3 font-subheading">
+      <a href="#home" onclick="navTo('home')" class="block py-2 text-brandDark dark:text-gray-200 font-medium border-b border-purple-50 dark:border-slate-800">Home</a>
+      <a href="#educator" onclick="navTo('educator')" class="block py-2 text-brandDark dark:text-gray-200 font-medium border-b border-purple-50 dark:border-slate-800">TVETA & Education</a>
+      <a href="#tech" onclick="navTo('tech')" class="block py-2 text-brandDark dark:text-gray-200 font-medium border-b border-purple-50 dark:border-slate-800">Software & Tech</a>
+      <a href="#fashion" onclick="navTo('fashion')" class="block py-2 text-brandDark dark:text-gray-200 font-medium border-b border-purple-50 dark:border-slate-800">Fashion Design</a>
+      <a href="#gallery" onclick="navTo('gallery')" class="block py-2 text-brandDark dark:text-gray-200 font-medium border-b border-purple-50 dark:border-slate-800">Gallery</a>
+      <a href="#author" onclick="navTo('author')" class="block py-2 text-brandDark dark:text-gray-200 font-medium border-b border-purple-50 dark:border-slate-800">Author & Books</a>
+      <a href="#blog" onclick="navTo('blog')" class="block py-2 text-brandDark dark:text-gray-200 font-medium border-b border-purple-50 dark:border-slate-800">Articles & Insights</a>
+      <a href="#contact" onclick="navTo('contact')" class="block py-2 text-brandDark dark:text-gray-200 font-medium">Contact & Booking</a>
+      <div class="pt-2 flex gap-2">
+        <button onclick="openCtaModal('whatsapp')" class="flex-1 bg-emerald-600 text-white py-2.5 rounded-lg text-center font-medium text-xs flex items-center justify-center gap-1.5">
+          <i class="fa-brands fa-whatsapp"></i> WhatsApp
+        </button>
+        <button onclick="openCtaModal('phone')" class="flex-1 bg-brandDark dark:bg-purple-900 text-white py-2.5 rounded-lg text-center font-medium text-xs flex items-center justify-center gap-1.5">
+          <i class="fa-solid fa-phone"></i> Call Direct
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- INTEGRATED ADMIN DASHBOARD SECTION -->
+  <section id="admin-panel" class="hidden max-w-7xl mx-auto my-6 px-4 sm:px-6">
+    <div class="bg-white dark:bg-slate-900 border border-blue-200 dark:border-blue-900/50 rounded-2xl p-6 shadow-xl relative">
+      <button onclick="toggleAdminPanel()" class="absolute top-4 right-4 text-gray-400 hover:text-gray-600 dark:hover:text-white text-lg">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <!-- Admin Login View -->
+      <div id="adminLoginScreen" class="max-w-md mx-auto py-8">
+        <div class="text-center mb-6">
+          <h2 class="font-heading text-2xl font-bold text-brandDark dark:text-purple-200">Admin Login</h2>
+          <p class="text-xs text-gray-500 dark:text-gray-400 mt-1">Authenticate to access content management tools</p>
+        </div>
+        <form id="adminLoginForm" onsubmit="handleAdminLogin(event)" class="space-y-4 font-subheading">
+          <div>
+            <label class="block text-xs font-semibold text-gray-700 dark:text-gray-300 mb-1">Username</label>
+            <input type="text" id="adminUsername" required autocomplete="off" class="w-full px-3 py-2 text-sm rounded-lg border border-gray-300 dark:border-slate-700 bg-white dark:bg-slate-800 text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+          </div>
+          <div>
+            <label class="block text-xs font-semibold text-gray-700 dark:text-gray-300 mb-1">Password</label>
+            <input type="password" id="adminPassword" required class="w-full px-3 py-2 text-sm rounded-lg border border-gray-300 dark:border-slate-700 bg-white dark:bg-slate-800 text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+          </div>
+          <div id="adminLoginError" class="text-xs text-red-500 text-center font-medium hidden">Invalid username or password!</div>
+          <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-2.5 rounded-lg text-sm transition">
+            Login to Dashboard
+          </button>
+        </form>
+      </div>
+
+      <!-- Admin Dashboard Main Screen (Hidden until authenticated) -->
+      <div id="adminDashboardScreen" class="hidden space-y-8">
+        <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 pb-4 border-b border-gray-200 dark:border-slate-800">
+          <div>
+            <h2 class="font-heading text-2xl font-bold text-brandDark dark:text-purple-200">Admin Dashboard</h2>
+            <p class="text-xs text-gray-500 dark:text-gray-400 mt-0.5">Manage platform articles, site assets, and portfolio content entries.</p>
+          </div>
+          <button onclick="handleAdminLogout()" class="bg-slate-600 hover:bg-slate-700 text-white font-semibold px-4 py-2 rounded-lg text-xs transition flex items-center gap-1.5 font-subheading">
+            <i class="fa-solid fa-right-from-bracket"></i> Logout
+          </button>
+        </div>
+
+        <div class="grid lg:grid-cols-2 gap-8">
+          <!-- Article Management Section -->
+          <div class="bg-slate-50 dark:bg-slate-800/50 p-5 rounded-xl border border-slate-200 dark:border-slate-700 space-y-4 font-subheading">
+            <h3 class="font-heading text-lg font-bold text-brandDark dark:text-purple-200 border-b border-slate-200 dark:border-slate-700 pb-2">Publish New Article</h3>
+            <form id="adminArticleForm" onsubmit="handleArticleSubmit(event)" class="space-y-3">
+              <div>
+                <label class="block text-xs font-semibold text-gray-700 dark:text-gray-300 mb-1">Article Title</label>
+                <input type="text" id="articleTitle" required class="w-full px-3 py-2 text-sm rounded-lg border border-gray-300 dark:border-slate-700 bg-white dark:bg-slate-800 text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+              </div>
+              <div>
+                <label class="block text-xs font-semibold text-gray-700 dark:text-gray-300 mb-1">Category</label>
+                <select id="articleCategory" class="w-full px-3 py-2 text-sm rounded-lg border border-gray-300 dark:border-slate-700 bg-white dark:bg-slate-800 text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                  <option value="Education">Education</option>
+                  <option value="Tech">Tech</option>
+                  <option value="Fashion">Fashion</option>
+                </select>
+              </div>
+              <div>
+                <label class="block text-xs font-semibold text-gray-700 dark:text-gray-300 mb-1">Content Snippet / Summary</label>
+                <textarea id="articleContent" rows="3" required class="w-full px-3 py-2 text-sm rounded-lg border border-gray-300 dark:border-slate-700 bg-white dark:bg-slate-800 text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+              </div>
+              <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 rounded-lg text-xs transition flex items-center justify-center gap-1.5">
+                <i class="fa-solid fa-paper-plane"></i> Publish Article
+              </button>
+            </form>
+          </div>
+
+          <!-- Media & Portfolio Entry Upload Section -->
+          <div class="bg-slate-50 dark:bg-slate-800/50 p-5 rounded-xl border border-slate-200 dark:border-slate-700 space-y-4 font-subheading">
+            <h3 class="font-heading text-lg font-bold text-brandDark dark:text-purple-200 border-b border-slate-200 dark:border-slate-700 pb-2">Upload Portfolio / Gallery Media</h3>
+            <form id="content-form" class="space-y-3">
+              <div>
+                <label for="item-title" class="block text-xs font-semibold text-gray-700 dark:text-gray-300 mb-1">Title</label>
+                <input type="text" id="item-title" placeholder="Enter entry title" required class="w-full px-3 py-1.5 text-sm rounded-lg border border-gray-300 dark:border-slate-700 bg-white dark:bg-slate-800 text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+              </div>
+
+              <div>
+                <label for="item-category" class="block text-xs font-semibold text-gray-700 dark:text-gray-300 mb-1">Target Category</label>
+                <select id="item-category" class="w-full px-3 py-1.5 text-sm rounded-lg border border-gray-300 dark:border-slate-700 bg-white dark:bg-slate-800 text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                  <option value="Gallery">Gallery Item</option>
+                  <option value="Tech">Tech Project</option>
+                  <option value="Fashion">Fashion Design</option>
+                  <option value="Education">Education</option>
+                </select>
+              </div>
+
+              <div>
+                <label for="item-desc" class="block text-xs font-semibold text-gray-700 dark:text-gray-300 mb-1">Description</label>
+                <textarea id="item-desc" rows="2" placeholder="Enter item details..." required class="w-full px-3 py-1.5 text-sm rounded-lg border border-gray-300 dark:border-slate-700 bg-white dark:bg-slate-800 text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+              </div>
+
+              <div>
+                <label for="item-image-file" class="block text-xs font-semibold text-gray-700 dark:text-gray-300 mb-1">Upload Image File</label>
+                <input type="file" id="item-image-file" accept="image/*" required class="w-full text-xs text-gray-500 dark:text-gray-400 file:mr-4 file:py-1.5 file:px-3 file:rounded-lg file:border-0 file:text-xs file:font-semibold file:bg-blue-50 file:text-blue-700 hover:file:bg-blue-100 dark:file:bg-slate-800 dark:file:text-blue-400" />
+                <img id="image-preview" class="file-preview mt-2 rounded-lg border border-gray-200 dark:border-slate-700 max-h-24" alt="Selected Image Preview" />
+              </div>
+
+              <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 rounded-lg text-xs transition flex items-center justify-center gap-1.5">
+                <i class="fa-solid fa-cloud-arrow-up"></i> Save Media Item
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Managed Published Articles List -->
+        <div class="space-y-3 font-subheading pt-4 border-t border-gray-200 dark:border-slate-800">
+          <div class="flex justify-between items-center">
+            <h3 class="font-heading text-lg font-bold text-brandDark dark:text-purple-200">Manage Published Articles</h3>
+            <button type="button" id="clear-data-btn" class="bg-red-100 dark:bg-red-950/40 text-red-700 dark:text-red-300 hover:bg-red-200 font-semibold px-3 py-1 rounded-lg text-xs transition flex items-center gap-1">
+              <i class="fa-solid fa-trash-can"></i> Clear Custom Storage
+            </button>
+          </div>
+          <ul id="adminArticleList" class="space-y-3">
+            <!-- Dynamic managed articles injected here -->
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAIN CONTENT AREA -->
+  <main class="flex-grow">
+
+    <!-- HOME SECTION -->
+    <section id="sec-home" class="view-section">
+      <!-- HERO BANNER WITH PROFESSIONAL PORTRAIT -->
+      <div class="bg-gradient-to-br from-brandDark via-brandPurple to-brandDark text-white py-16 md:py-20 px-4 sm:px-6 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto grid lg:grid-cols-12 gap-12 items-center relative z-10">
+          
+          <div class="lg:col-span-7 space-y-6">
+            <div class="inline-flex items-center gap-2 bg-purple-900/60 border border-purple-400/30 text-purple-200 px-3 py-1 rounded-full text-xs font-tech-code">
+              <i class="fa-solid fa-award text-amber-400"></i> Registered TVETA Trainer & Tech Specialist
+            </div>
+            <h1 class="font-editorial-title text-3xl sm:text-4xl md:text-5xl font-bold leading-tight text-white italic">
+              Integrating Competency Education, Software Engineering & Creative Design.
+            </h1>
+            <p class="text-purple-100 text-base sm:text-lg max-w-2xl font-light leading-relaxed">
+              I am Rosemercy Opondo—an accredited TVETA Home Economics lecturer, full-stack software developer, apparel designer, and author based in Kenya. I build practical technical systems and deliver practical CBET training across academic and vocational levels.
+            </p>
+
+            <!-- AI ASSISTANT WIDGET BOX -->
+            <div class="bg-white/10 backdrop-blur-md border border-purple-300/30 rounded-xl p-4 text-white max-w-2xl space-y-3">
+              <div class="flex items-center justify-between border-b border-purple-300/20 pb-2">
+                <span class="text-xs font-tech-code font-bold uppercase tracking-wider text-purple-200 flex items-center gap-1.5">
+                  <i class="fa-solid fa-robot text-amber-300"></i> Rosemercy AI Assistant
+                </span>
+                <span class="text-[10px] font-tech-code bg-emerald-500/20 text-emerald-300 px-2 py-0.5 rounded border border-emerald-400/30">Active AI</span>
+              </div>
+              <p id="aiOutputText" class="text-xs text-purple-100 italic leading-relaxed min-h-[3rem]">
+                "Hello! I am Rosemercy's AI Assistant. Ask me anything about her TVET training modules, software engineering capabilities, custom fashion orders, or books!"
+              </p>
+              <div class="flex gap-2">
+                <input type="text" id="aiPromptInput" placeholder="Ask Rosemercy's AI (e.g. 'What tech stack do you use?')" class="flex-grow px-3 py-1.5 rounded text-xs bg-slate-900/80 text-white placeholder-gray-400 border border-purple-400/30 focus:outline-none focus:border-amber-400 font-subheading" onkeypress="handleAiKeyPress(event)" />
+                <button onclick="generateAiResponse()" class="bg-amber-500 hover:bg-amber-600 text-brandDark font-bold px-3 py-1.5 rounded text-xs transition shrink-0 font-subheading">
+                  Ask AI
+                </button>
+              </div>
+            </div>
+
+            <div class="flex flex-wrap gap-4 pt-2 font-subheading">
+              <a href="#educator" onclick="navTo('educator')" class="bg-brandAccent hover:bg-purple-600 text-white font-semibold px-6 py-3 rounded-lg shadow-md transition text-sm flex items-center gap-2">
+                <i class="fa-solid fa-book-open"></i> TVETA & Teaching
+              </a>
+              <button onclick="openCtaModal('whatsapp')" class="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold px-6 py-3 rounded-lg transition text-sm flex items-center gap-2">
+                <i class="fa-brands fa-whatsapp text-lg"></i> Direct Consultation
+              </button>
+            </div>
+          </div>
+
+          <!-- Hero Portrait Card -->
+          <div class="lg:col-span-5 flex justify-center">
+            <div class="relative group max-w-sm w-full">
+              <div class="absolute -inset-1 bg-gradient-to-r from-brandAccent to-purple-400 rounded-2xl blur opacity-30 group-hover:opacity-50 transition duration-300"></div>
+              <div class="relative bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-4 text-white space-y-4">
+                <img src="WhatsApp Image 2026-09-22 at 3.01.54 PM.jpeg" alt="Rosemercy Opondo Professional Portrait" class="w-full h-80 sm:h-96 object-cover object-top rounded-xl shadow-md border border-white/10" onerror="this.src='https://via.placeholder.com/400x500'" />
+                <div class="space-y-2 pt-1">
+                  <div class="flex justify-between items-center border-b border-white/10 pb-2">
+                    <span class="text-sm font-subheading font-semibold text-white">Rosemercy Opondo</span>
+                    <span class="text-[11px] font-tech-code bg-emerald-500/20 text-emerald-300 px-2 py-0.5 rounded border border-emerald-400/30">Verified TVETA Trainer</span>
+                  </div>
+                  <p class="text-xs text-purple-200">B.Ed Home Economics (Kenyatta University) | Full-Stack Software Developer</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- 4 CORE PILLARS GRID -->
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 py-16">
+        <div class="text-center max-w-2xl mx-auto mb-12">
+          <h2 class="font-heading text-2xl sm:text-3xl font-bold text-brandDark dark:text-purple-200">Four Strategic Pillars</h2>
+          <p class="text-gray-600 dark:text-gray-400 text-sm mt-2 font-subheading">Connecting institutional learning, full-stack software development, bespoke fashion, and literary works.</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div onclick="navTo('educator')" class="cursor-pointer bg-white dark:bg-slate-900 border border-purple-100 dark:border-slate-800 rounded-xl p-6 shadow-sm hover:shadow-md hover:border-brandAccent transition group flex flex-col justify-between">
+            <div>
+              <div class="w-12 h-12 rounded-lg bg-purple-50 dark:bg-purple-950/50 text-brandAccent flex items-center justify-center text-xl mb-4 group-hover:bg-brandAccent group-hover:text-white transition">
+                <i class="fa-solid fa-chalkboard-user"></i>
+              </div>
+              <h3 class="font-subheading text-lg font-bold text-brandDark dark:text-purple-200 mb-2">TVETA & Holistic Educator</h3>
+              <p class="text-gray-600 dark:text-gray-400 text-xs leading-relaxed mb-4">Registered TVETA Tutor delivering Home Economics CBET modules, leadership training, and secondary school sciences.</p>
+            </div>
+            <span class="text-xs font-subheading font-semibold text-brandAccent dark:text-purple-400 group-hover:translate-x-1 transition inline-flex items-center gap-1">Explore Educator Portfolio <i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+
+          <div onclick="navTo('tech')" class="cursor-pointer bg-white dark:bg-slate-900 border border-purple-100 dark:border-slate-800 rounded-xl p-6 shadow-sm hover:shadow-md hover:border-brandAccent transition group flex flex-col justify-between">
+            <div>
+              <div class="w-12 h-12 rounded-lg bg-purple-50 dark:bg-purple-950/50 text-brandAccent flex items-center justify-center text-xl mb-4 group-hover:bg-brandAccent group-hover:text-white transition">
+                <i class="fa-solid fa-code"></i>
+              </div>
+              <h3 class="font-subheading text-lg font-bold text-brandDark dark:text-purple-200 mb-2">Software Development</h3>
+              <p class="text-gray-600 dark:text-gray-400 text-xs leading-relaxed mb-4">Building custom management portals, school database architectures, web applications, and web platforms.</p>
+            </div>
+            <span class="text-xs font-subheading font-semibold text-brandAccent dark:text-purple-400 group-hover:translate-x-1 transition inline-flex items-center gap-1">View Software Projects <i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+
+          <div onclick="navTo('fashion')" class="cursor-pointer bg-white dark:bg-slate-900 border border-purple-100 dark:border-slate-800 rounded-xl p-6 shadow-sm hover:shadow-md hover:border-brandAccent transition group flex flex-col justify-between">
+            <div>
+              <div class="w-12 h-12 rounded-lg bg-purple-50 dark:bg-purple-950/50 text-brandAccent flex items-center justify-center text-xl mb-4 group-hover:bg-brandAccent group-hover:text-white transition">
+                <i class="fa-solid fa-shirt"></i>
+              </div>
+              <h3 class="font-subheading text-lg font-bold text-brandDark dark:text-purple-200 mb-2">Bespoke Fashion</h3>
+              <p class="text-gray-600 dark:text-gray-400 text-xs leading-relaxed mb-4">Textile science, custom pattern drafting, tailored apparel construction, and institutional design consultation.</p>
+            </div>
+            <span class="text-xs font-subheading font-semibold text-brandAccent dark:text-purple-400 group-hover:translate-x-1 transition inline-flex items-center gap-1">View Fashion Catalog <i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+
+          <div onclick="navTo('author')" class="cursor-pointer bg-white dark:bg-slate-900 border border-purple-100 dark:border-slate-800 rounded-xl p-6 shadow-sm hover:shadow-md hover:border-brandAccent transition group flex flex-col justify-between">
+            <div>
+              <div class="w-12 h-12 rounded-lg bg-purple-50 dark:bg-purple-950/50 text-brandAccent flex items-center justify-center text-xl mb-4 group-hover:bg-brandAccent group-hover:text-white transition">
+                <i class="fa-solid fa-book"></i>
+              </div>
+              <h3 class="font-subheading text-lg font-bold text-brandDark dark:text-purple-200 mb-2">Published Author</h3>
+              <p class="text-gray-600 dark:text-gray-400 text-xs leading-relaxed mb-4">Literary works including "The Man Who Planted Trees" (biography/memoir) and "In My Dreams".</p>
+            </div>
+            <span class="text-xs font-subheading font-semibold text-brandAccent dark:text-purple-400 group-hover:translate-x-1 transition inline-flex items-center gap-1">Read Book Library <i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATOR & TVETA SECTION -->
+    <section id="sec-educator" class="view-section hidden py-12 px-4 sm:px-6">
+      <div class="max-w-7xl mx-auto space-y-12">
+        <div class="bg-brandDark text-white rounded-2xl p-8 md:p-10 relative overflow-hidden">
+          <div class="max-w-3xl relative z-10 space-y-4">
+            <span class="text-xs font-tech-code font-semibold uppercase tracking-wider text-purple-300">TVETA Accredited Tutor & Secondary Educator</span>
+            <h2 class="font-heading text-3xl sm:text-4xl font-bold">Building Confident Learners Through Competency Education</h2>
+            <p class="text-purple-100 text-sm sm:text-base leading-relaxed">
+              Combining academic excellence with character building, TVETA Competency-Based Education & Training (CBET), wellness advocacy, and youth skill mastery.
+            </p>
+            <div class="pt-2 flex flex-wrap gap-3 font-subheading">
+              <span class="bg-purple-900/80 border border-purple-500/30 text-purple-200 px-3 py-1 rounded text-xs"><i class="fa-solid fa-check text-emerald-400 mr-1"></i> B.Ed Kenyatta University</span>
+              <span class="bg-purple-900/80 border border-purple-500/30 text-purple-200 px-3 py-1 rounded text-xs"><i class="fa-solid fa-check text-emerald-400 mr-1"></i> Registered TVETA Trainer & Assessor</span>
+              <span class="bg-purple-900/80 border border-purple-500/30 text-purple-200 px-3 py-1 rounded text-xs"><i class="fa-solid fa-check text-emerald-400 mr-1"></i> Chess & Badminton Coach</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- TVETA LECTURING CURRICULUM CBET MODULES -->
+        <div class="bg-white dark:bg-slate-900 border border-purple-100 dark:border-slate-800 rounded-2xl p-6 sm:p-8 shadow-sm">
+          <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-8 pb-6 border-b border-purple-100 dark:border-slate-800">
+            <div>
+              <h3 class="font-heading text-xl sm:text-2xl font-bold text-brandDark dark:text-purple-200">TVETA CBET Lecturing Capabilities (KNQA Level 5 & 6)</h3>
+              <p class="text-gray-600 dark:text-gray-400 text-sm mt-1 font-subheading">Ready to lecture, instruct, and assess TVET Diploma and Craft Certificate courses across TVETA institutions.</p>
+            </div>
+            <button onclick="openCtaModal('whatsapp')" class="bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-2.5 rounded-lg text-xs font-subheading font-semibold shadow-sm transition inline-flex items-center gap-2 self-start md:self-auto">
+              <i class="fa-brands fa-whatsapp text-sm"></i> Hire for TVET Lecturing
+            </button>
+          </div>
+
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="bg-brandLightBg dark:bg-slate-800/50 border border-purple-100 dark:border-slate-700 rounded-xl p-5">
+              <div class="text-brandAccent dark:text-purple-300 font-subheading font-bold text-sm mb-2 flex items-center gap-2">
+                <i class="fa-solid fa-utensils"></i> Food & Beverage Management
+              </div>
+              <p class="text-xs text-gray-600 dark:text-gray-300 leading-relaxed">Culinary techniques, commercial kitchen organization, menu planning, food safety hygiene (HACCP), and large-scale meal production.</p>
+            </div>
+
+            <div class="bg-brandLightBg dark:bg-slate-800/50 border border-purple-100 dark:border-slate-700 rounded-xl p-5">
+              <div class="text-brandAccent dark:text-purple-300 font-subheading font-bold text-sm mb-2 flex items-center gap-2">
+                <i class="fa-solid fa-house-user"></i> Institutional & Home Management
+              </div>
+              <p class="text-xs text-gray-600 dark:text-gray-300 leading-relaxed">Facility management, housekeeping operations, resource allocation, equipment maintenance, and domestic budgeting practices.</p>
+            </div>
+
+            <div class="bg-brandLightBg dark:bg-slate-800/50 border border-purple-100 dark:border-slate-700 rounded-xl p-5">
+              <div class="text-brandAccent dark:text-purple-300 font-subheading font-bold text-sm mb-2 flex items-center gap-2">
+                <i class="fa-solid fa-apple-whole"></i> Applied Nutrition & Dietetics
+              </div>
+              <p class="text-xs text-gray-600 dark:text-gray-300 leading-relaxed">Maternal-child nutrition, dietary planning for special health conditions, food chemistry, preservation methods, and community health interventions.</p>
+            </div>
+
+            <div class="bg-brandLightBg dark:bg-slate-800/50 border border-purple-100 dark:border-slate-700 rounded-xl p-5">
+              <div class="text-brandAccent dark:text-purple-300 font-subheading font-bold text-sm mb-2 flex items-center gap-2">
+                <i class="fa-solid fa-scissors"></i> Fashion & Garment Construction
+              </div>
+              <p class="text-xs text-gray-600 dark:text-gray-300 leading-relaxed">Pattern drafting, garment construction techniques, textile science, apparel maintenance, and fashion business fundamentals.</p>
+            </div>
+
+            <div class="bg-brandLightBg dark:bg-slate-800/50 border border-purple-100 dark:border-slate-700 rounded-xl p-5">
+              <div class="text-brandAccent dark:text-purple-300 font-subheading font-bold text-sm mb-2 flex items-center gap-2">
+                <i class="fa-solid fa-users"></i> Family Dynamics & Consumer Economics
+              </div>
+              <p class="text-xs text-gray-600 dark:text-gray-300 leading-relaxed">Child development principles, family resource management, consumer rights & protection, and financial literacy training.</p>
+            </div>
+
+            <div class="bg-brandLightBg dark:bg-slate-800/50 border border-purple-100 dark:border-slate-700 rounded-xl p-5">
+              <div class="text-brandAccent dark:text-purple-300 font-subheading font-bold text-sm mb-2 flex items-center gap-2">
+                <i class="fa-solid fa-clipboard-check"></i> CBET Pedagogy & Assessment
+              </div>
+              <p class="text-xs text-gray-600 dark:text-gray-300 leading-relaxed">Competency-Based Assessment design, practical portfolio verification, TVETA CDACC standards compliance, and modern instructional delivery.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- TEACHING EXPERIENCE TIMELINE -->
+        <div class="grid lg:grid-cols-12 gap-8">
+          <div class="lg:col-span-7 bg-white dark:bg-slate-900 border border-purple-100 dark:border-slate-800 rounded-2xl p-6 sm:p-8 shadow-sm space-y-6">
+            <h3 class="font-heading text-xl font-bold text-brandDark dark:text-purple-200 border-b border-purple-100 dark:border-slate-800 pb-3">Institutional Teaching Timeline</h3>
+            
+            <div class="space-y-6 border-l-2 border-brandAccent/30 pl-4 ml-2">
+              <div class="relative">
+                <div class="absolute -left-[23px] top-1 w-3.5 h-3.5 rounded-full bg-brandAccent border-2 border-white dark:border-slate-900"></div>
+                <span class="text-xs font-tech-code font-semibold text-brandAccent dark:text-purple-400 uppercase">2026</span>
+                <h4 class="font-subheading text-base font-bold text-brandDark dark:text-purple-200">Saint Germain Gatanga Girls High School</h4>
+                <p class="text-xs text-gray-600 dark:text-gray-400 mt-1">Biology & Home Science Instructor | Chess Head Coach & Wellness Advocate</p>
+              </div>
+
+              <div class="relative">
+                <div class="absolute -left-[23px] top-1 w-3.5 h-3.5 rounded-full bg-brandAccent border-2 border-white dark:border-slate-900"></div>
+                <span class="text-xs font-tech-code font-semibold text-brandAccent dark:text-purple-400 uppercase">2025</span>
+                <h4 class="font-subheading text-base font-bold text-brandDark dark:text-purple-200">Nyawara Girls Senior School</h4>
+                <p class="text-xs text-gray-600 dark:text-gray-400 mt-1">Home Economics & Sciences Instructor | Developed digital tracking portal prototype.</p>
+              </div>
+
+              <div class="relative">
+                <div class="absolute -left-[23px] top-1 w-3.5 h-3.5 rounded-full bg-brandAccent border-2 border-white dark:border-slate-900"></div>
+                <span class="text-xs font-tech-code font-semibold text-brandAccent dark:text-purple-400 uppercase">2024</span>
+                <h4 class="font-subheading text-base font-bold text-brandDark dark:text-purple-200">Bishop Okoth Mbaga Girls High School</h4>
+                <p class="text-xs text-gray-600 dark:text-gray-400 mt-1">Secondary School Academic Teacher & Awavumbuzi Innovation Mentor</p>
+              </div>
+
+              <div class="relative">
+                <div class="absolute -left-[23px] top-1 w-3.5 h-3.5 rounded-full bg-brandAccent border-2 border-white dark:border-slate-900"></div>
+                <span class="text-xs font-tech-code font-semibold text-brandAccent dark:text-purple-400 uppercase">2023</span>
+                <h4 class="font-subheading text-base font-bold text-brandDark dark:text-purple-200">Nyamira Girls High School</h4>
+                <p class="text-xs text-gray-600 dark:text-gray-400 mt-1">Biology & Home Science Teaching Practicum</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- SKILLS & EXTRACURRICULAR -->
+          <div class="lg:col-span-5 bg-white dark:bg-slate-900 border border-purple-100 dark:border-slate-800 rounded-2xl p-6 sm:p-8 shadow-sm space-y-6">
+            <h3 class="font-heading text-xl font-bold text-brandDark dark:text-purple-200 border-b border-purple-100 dark:border-slate-800 pb-3">Coaching & Programs</h3>
+            <ul class="space-y-4 text-sm">
+              <li class="flex items-start gap-3">
+                <i class="fa-solid fa-chess text-brandAccent dark:text-purple-400 text-lg mt-0.5"></i>
+                <div>
+                  <strong class="block text-brandDark dark:text-purple-200 font-subheading font-semibold">Chess Coaching</strong>
+                  <span class="text-xs text-gray-600 dark:text-gray-400 leading-relaxed">Coaching school chess teams for analytical thinking and strategic focus in competitive tournaments.</span>
+                </div>
+              </li>
+              <li class="flex items-start gap-3">
+                <i class="fa-solid fa-table-tennis-paddle-ball text-brandAccent dark:text-purple-400 text-lg mt-0.5"></i>
+                <div>
+                  <strong class="block text-brandDark dark:text-purple-200 font-subheading font-semibold">Badminton Coaching</strong>
+                  <span class="text-xs text-gray-600 dark:text-gray-400 leading-relaxed">Promoting physical agility, sportsmanship, and student wellness through racket sports.</span>
+                </div>
+              </li>
+              <li class="flex items-start gap-3">
+                <i class="fa-solid fa-masks-theater text-brandAccent dark:text-purple-400 text-lg mt-0.5"></i>
+                <div>
+                  <strong class="block text-brandDark dark:text-purple-200 font-subheading font-semibold">Music & Drama Mentorship</strong>
+                  <span class="text-xs text-gray-600 dark:text-gray-400 leading-relaxed">Guiding students through public speaking, stage performance, and creative expression.</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOFTWARE TECH SECTION -->
+    <section id="sec-tech" class="view-section hidden py-12 px-4 sm:px-6">
+      <div class="max-w-7xl mx-auto space-y-12">
+        <div class="bg-brandDark text-white rounded-2xl p-8 md:p-10 flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
+          <div>
+            <span class="text-xs font-tech-code font-semibold uppercase tracking-wider text-purple-300">Software Engineer & Web Developer</span>
+            <h2 class="font-heading text-3xl font-bold mt-1">Building Practical Web Solutions</h2>
+            <p class="text-purple-100 text-sm mt-2 max-w-2xl font-subheading">Moringa School trained engineer with expertise in React, Next.js, TypeScript, Node.js, and database architectures.</p>
+          </div>
+          <button onclick="openCtaModal('whatsapp')" class="bg-brandAccent hover:bg-purple-600 text-white font-subheading font-semibold px-5 py-2.5 rounded-lg text-xs shadow transition flex items-center gap-2 whitespace-nowrap">
+            <i class="fa-brands fa-whatsapp text-sm"></i> Discuss Tech Project
+          </button>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8">
+          <div class="bg-white dark:bg-slate-900 border border-purple-100 dark:border-slate-800 rounded-2xl p-6 shadow-sm space-y-4">
+            <h3 class="font-heading text-lg font-bold text-brandDark dark:text-purple-200 border-b border-purple-100 dark:border-slate-800 pb-2">Technical Skills & Technologies</h3>
+            <div class="flex flex-wrap gap-2 font-tech-code">
+              <span class="bg-purple-50 dark:bg-slate-800 text-brandDark dark:text-purple-200 border border-purple-200 dark:border-slate-700 text-xs px-3 py-1 rounded-md font-medium">React.js</span>
+              <span class="bg-purple-50 dark:bg-slate-800 text-brandDark dark:text-purple-200 border border-purple-200 dark:border-slate-700 text-xs px-3 py-1 rounded-md font-medium">TypeScript</span>
+              <span class="bg-purple-50 dark:bg-slate-800 text-brandDark dark:text-purple-200 border border-purple-200 dark:border-slate-700 text-xs px-3 py-1 rounded-md font-medium">Next.js</span>
+              <span class="bg-purple-50 dark:bg-slate-800 text-brandDark dark:text-purple-200 border border-purple-200 dark:border-slate-700 text-xs px-3 py-1 rounded-md font-medium">Tailwind CSS</span>
+              <span class="bg-purple-50 dark:bg-slate-800 text-brandDark dark:text-purple-200 border border-purple-200 dark:border-slate-700 text-xs px-3 py-1 rounded-md font-medium">Node.js</span>
+              <span class="bg-purple-50 dark:bg-slate-800 text-brandDark dark:text-purple-200 border border-purple-200 dark:border-slate-700 text-xs px-3 py-1 rounded-md font-medium">Express</span>
+              <span class="bg-purple-50 dark:bg-slate-800 text-brandDark dark:text-purple-200 border border-purple-200 dark:border-slate-700 text-xs px-3 py-1 rounded-md font-medium">Python</span>
+              <span class="bg-purple-50 dark:bg-slate-800 text-brandDark dark:text-purple-200 border border-purple-200 dark:border-slate-700 text-xs px-3 py-1 rounded-md font-medium">PostgreSQL</span>
+              <span class="bg-purple-50 dark:bg-slate-800 text-brandDark dark:text-purple-200 border border-purple-200 dark:border-slate-700 text-xs px-3 py-1 rounded-md font-medium">MySQL</span>
+              <span class="bg-purple-50 dark:bg-slate-800 text-brandDark dark:text-purple-200 border border-purple-200 dark:border-slate-700 text-xs px-3 py-1 rounded-md font-medium">Git & GitHub</span>
+            </div>
+          </div>
+
+          <div class="bg-white dark:bg-slate-900 border border-purple-100 dark:border-slate-800 rounded-2xl p-6 shadow-sm space-y-4">
+            <h3 class="font-heading text-lg font-bold text-brandDark dark:text-purple-200 border-b border-purple-100 dark:border-slate-800 pb-2">Software Certifications</h3>
+            <ul class="space-y-3 text-xs text-gray-700 dark:text-gray-300">
+              <li class="flex items-center gap-2">
+                <i class="fa-solid fa-certificate text-brandAccent dark:text-purple-400"></i>
+                <span><strong>Software Engineering Bootcamp:</strong> Moringa School (2025–2026)</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i class="fa-solid fa-certificate text-brandAccent dark:text-purple-400"></i>
+                <span><strong>Generative AI Certification:</strong> Moringa School (2026)</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i class="fa-solid fa-certificate text-brandAccent dark:text-purple-400"></i>
+                <span><strong>AWS Certified Cloud Practitioner:</strong> In Progress (2026)</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="font-heading text-xl font-bold text-brandDark dark:text-purple-200 mb-6">Software Projects & Client Platforms</h3>
+          <div id="techProjectsContainer" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Dynamic Render -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FASHION DESIGN SECTION -->
+    <section id="sec-fashion" class="view-section hidden py-12 px-4 sm:px-6">
+      <div class="max-w-7xl mx-auto space-y-12">
+        <div class="bg-brandDark text-white rounded-2xl p-8 md:p-10 flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
+          <div>
+            <span class="text-xs font-tech-code font-semibold uppercase tracking-wider text-purple-300">Bespoke Apparel & Textile Art</span>
+            <h2 class="font-editorial-title text-3xl font-bold mt-1 italic">Fashion Design & Tailored Wear</h2>
+            <p class="text-purple-100 text-sm mt-2 max-w-2xl font-subheading">Precision pattern drafting, garment construction, institutional attire design, and bespoke custom fitting.</p>
+          </div>
+          <button onclick="openCtaModal('whatsapp')" class="bg-brandAccent hover:bg-purple-600 text-white font-subheading font-semibold px-5 py-2.5 rounded-lg text-xs shadow transition flex items-center gap-2 whitespace-nowrap">
+            <i class="fa-brands fa-whatsapp text-sm"></i> Order Custom Outfit
+          </button>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-6">
+          <div class="bg-white dark:bg-slate-900 border border-purple-100 dark:border-slate-800 rounded-2xl p-6 shadow-sm">
+            <div class="w-10 h-10 rounded-lg bg-purple-50 dark:bg-purple-950/50 text-brandAccent flex items-center justify-center text-lg mb-4">
+              <i class="fa-solid fa-scissors"></i>
+            </div>
+            <h3 class="font-subheading text-base font-bold text-brandDark dark:text-purple-200 mb-2">Pattern Drafting & Precision Fitting</h3>
+            <p class="text-gray-600 dark:text-gray-400 text-xs leading-relaxed">Custom body measurements transformed into flawless structural clothing patterns for personal and commercial production.</p>
+          </div>
+
+          <div class="bg-white dark:bg-slate-900 border border-purple-100 dark:border-slate-800 rounded-2xl p-6 shadow-sm">
+            <div class="w-10 h-10 rounded-lg bg-purple-50 dark:bg-purple-950/50 text-brandAccent flex items-center justify-center text-lg mb-4">
+              <i class="fa-solid fa-shirt"></i>
+            </div>
+            <h3 class="font-subheading text-base font-bold text-brandDark dark:text-purple-200 mb-2">Bespoke & Executive Wear</h3>
+            <p class="text-gray-600 dark:text-gray-400 text-xs leading-relaxed">Elegantly designed official wear, traditional attire interpretations, and custom dresses tailored to client preferences.</p>
+          </div>
+
+          <div class="bg-white dark:bg-slate-900 border border-purple-100 dark:border-slate-800 rounded-2xl p-6 shadow-sm">
+            <div class="w-10 h-10 rounded-lg bg-purple-50 dark:bg-purple-950/50 text-brandAccent flex items-center justify-center text-lg mb-4">
+              <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+            <h3 class="font-subheading text-base font-bold text-brandDark dark:text-purple-200 mb-2">Institutional Uniform Design</h3>
+            <p class="text-gray-600 dark:text-gray-400 text-xs leading-relaxed">Durable, comfortable, and aesthetically distinct uniform concepts for schools, institutions, and corporate teams.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY SECTION -->
+    <section id="sec-gallery" class="view-section hidden py-12 px-4 sm:px-6">
+      <div class="max-w-7xl mx-auto space-y-8">
+        <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 border-b border-purple-100 dark:border-slate-800 pb-6">
+          <div>
+            <h2 class="font-heading text-3xl font-bold text-brandDark dark:text-purple-200">Portfolio Gallery</h2>
+            <p class="text-gray-600 dark:text-gray-400 text-sm mt-1 font-subheading">Showcase of educational sessions, software interfaces, bespoke fashion creations, and events.</p>
+          </div>
+          <div class="flex flex-wrap gap-2 font-subheading" id="galleryCategoryFilters">
+            <button onclick="filterGallery('All')" class="bg-brandDark dark:bg-purple-900 text-white px-3 py-1 rounded-md text-xs font-medium">All</button>
+            <button onclick="filterGallery('Fashion')" class="bg-white dark:bg-slate-800 border border-purple-200 dark:border-slate-700 text-brandDark dark:text-gray-200 px-3 py-1 rounded-md text-xs font-medium hover:border-brandAccent">Fashion</button>
+            <button onclick="filterGallery('Tech')" class="bg-white dark:bg-slate-800 border border-purple-200 dark:border-slate-700 text-brandDark dark:text-gray-200 px-3 py-1 rounded-md text-xs font-medium hover:border-brandAccent">Tech & Systems</button>
+            <button onclick="filterGallery('Education')" class="bg-white dark:bg-slate-800 border border-purple-200 dark:border-slate-700 text-brandDark dark:text-gray-200 px-3 py-1 rounded-md text-xs font-medium hover:border-brandAccent">Education</button>
+          </div>
+        </div>
+
+        <div id="galleryGridContainer" class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+          <!-- Dynamic Gallery Render -->
+        </div>
+      </div>
+    </section>
+
+    <!-- AUTHOR SECTION -->
+    <section id="sec-author" class="view-section hidden py-12 px-4 sm:px-6">
+      <div class="max-w-7xl mx-auto space-y-12">
+        <div class="bg-brandDark text-white rounded-2xl p-8 md:p-10">
+          <div class="max-w-3xl space-y-3">
+            <span class="text-xs font-tech-code font-semibold uppercase tracking-wider text-purple-300">Published Works & Stories</span>
+            <h2 class="font-editorial-title text-3xl font-bold italic">Literary Books & Memoirs</h2>
+            <p class="text-purple-100 text-sm leading-relaxed">
+              Explorations of family legacy, resilience, human duality, and the cognitive science of dreams through personal storytelling.
+            </p>
+          </div>
+        </div>
+
+        <div id="booksContainer" class="grid md:grid-cols-2 gap-8">
+          <!-- Dynamic Render Books -->
+        </div>
+      </div>
+    </section>
+
+    <!-- BLOG SECTION -->
+    <section id="sec-blog" class="view-section hidden py-12 px-4 sm:px-6">
+      <div class="max-w-7xl mx-auto space-y-8">
+        <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 border-b border-purple-100 dark:border-slate-800 pb-6">
+          <div>
+            <h2 class="font-editorial-title text-3xl font-bold text-brandDark dark:text-purple-200 italic">Articles & Essays</h2>
+            <p class="text-gray-600 dark:text-gray-400 text-sm mt-1 font-subheading">Reflections on TVET education, web software architecture, wellness, and literary arts.</p>
+          </div>
+          <div class="flex flex-wrap gap-2 font-subheading" id="blogCategoryFilters">
+            <button onclick="filterBlog('All')" class="bg-brandDark dark:bg-purple-900 text-white px-3 py-1 rounded-md text-xs font-medium">All</button>
+            <button onclick="filterBlog('Education')" class="bg-white dark:bg-slate-800 border border-purple-200 dark:border-slate-700 text-brandDark dark:text-gray-200 px-3 py-1 rounded-md text-xs font-medium hover:border-brandAccent">Education</button>
+            <button onclick="filterBlog('Tech')" class="bg-white dark:bg-slate-800 border border-purple-200 dark:border-slate-700 text-brandDark dark:text-gray-200 px-3 py-1 rounded-md text-xs font-medium hover:border-brandAccent">Tech</button>
+            <button onclick="filterBlog('Fashion')" class="bg-white dark:bg-slate-800 border border-purple-200 dark:border-slate-700 text-brandDark dark:text-gray-200 px-3 py-1 rounded-md text-xs font-medium hover:border-brandAccent">Fashion</button>
+          </div>
+        </div>
+
+        <div id="blogGridContainer" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Dynamic Render Blog Posts -->
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="sec-contact" class="view-section hidden py-12 px-4 sm:px-6">
+      <div class="max-w-7xl mx-auto space-y-12">
+        <div class="text-center max-w-2xl mx-auto">
+          <h2 class="font-heading text-3xl font-bold text-brandDark dark:text-purple-200">Get in Touch</h2>
+          <p class="text-gray-600 dark:text-gray-400 text-sm mt-2 font-subheading">Whether you need TVETA lecturing, a custom web app built, bespoke apparel designed, or book inquiries, reach out directly.</p>
+        </div>
+
+        <div class="grid lg:grid-cols-12 gap-8 items-start">
+          <div class="lg:col-span-5 space-y-4">
+            <div class="bg-white dark:bg-slate-900 border border-purple-100 dark:border-slate-800 rounded-xl p-6 shadow-sm space-y-4">
+              <h3 class="font-subheading text-lg font-bold text-brandDark dark:text-purple-200 border-b border-purple-100 dark:border-slate-800 pb-2">Direct Contact Information</h3>
+              
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-lg bg-purple-50 dark:bg-purple-950/50 text-brandAccent flex items-center justify-center text-base">
+                  <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div>
+                  <span class="block text-xs text-gray-500 dark:text-gray-400 font-medium">Primary Email</span>
+                  <a href="mailto:rosemercyopondo0@gmail.com" class="text-sm font-subheading font-semibold text-brandDark dark:text-purple-200 hover:text-brandAccent">rosemercyopondo0@gmail.com</a>
+                </div>
+              </div>
+
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-lg bg-emerald-50 dark:bg-emerald-950/50 text-emerald-600 flex items-center justify-center text-base">
+                  <i class="fa-brands fa-whatsapp"></i>
+                </div>
+                <div>
+                  <span class="block text-xs text-gray-500 dark:text-gray-400 font-medium">Phone & WhatsApp</span>
+                  <button onclick="openCtaModal('whatsapp')" class="text-sm font-subheading font-semibold text-brandDark dark:text-purple-200 hover:text-emerald-600 text-left">
+                    +254 114 277 839
+                  </button>
+                </div>
+              </div>
+
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-lg bg-purple-50 dark:bg-purple-950/50 text-brandAccent flex items-center justify-center text-base">
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div>
+                  <span class="block text-xs text-gray-500 dark:text-gray-400 font-medium">Location</span>
+                  <span class="text-sm font-subheading font-semibold text-brandDark dark:text-purple-200">Nairobi & Kiambu, Kenya</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="bg-emerald-900 text-white rounded-xl p-6 space-y-3 font-subheading">
+              <h4 class="font-bold text-base flex items-center gap-2">
+                <i class="fa-brands fa-whatsapp text-emerald-400"></i> Instant Options
+              </h4>
+              <p class="text-xs text-emerald-100 leading-relaxed">
+                Connect instantly via WhatsApp or standard direct cellular call.
+              </p>
+              <div class="flex gap-2">
+                <button onclick="openCtaModal('whatsapp')" class="flex-1 bg-emerald-500 hover:bg-emerald-600 text-white font-semibold py-2.5 rounded-lg text-xs transition text-center">
+                  WhatsApp
+                </button>
+                <button onclick="openCtaModal('phone')" class="flex-1 bg-emerald-800 hover:bg-emerald-700 text-white font-semibold py-2.5 rounded-lg text-xs transition text-center">
+                  Direct Call
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="lg:col-span-7 bg-white dark:bg-slate-900 border border-purple-100 dark:border-slate-800 rounded-xl p-6 sm:p-8 shadow-sm">
+            <h3 class="font-heading text-xl font-bold text-brandDark dark:text-purple-200 mb-4">Send a Message</h3>
+            <form onsubmit="handleFormSubmit(event)" class="space-y-4 font-subheading">
+              <div class="grid sm:grid-cols-2 gap-4">
+                <div>
+                  <label class="block text-xs font-semibold text-gray-700 dark:text-gray-300 mb-1">Your Name</label>
+                  <input type="text" required placeholder="John Doe" class="w-full px-3.5 py-2 rounded-lg border border-purple-100 dark:border-slate-700 bg-brandLightBg/50 dark:bg-slate-800 text-sm text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-brandAccent" />
+                </div>
+                <div>
+                  <label class="block text-xs font-semibold text-gray-700 dark:text-gray-300 mb-1">Email Address</label>
+                  <input type="email" required placeholder="john@example.com" class="w-full px-3.5 py-2 rounded-lg border border-purple-100 dark:border-slate-700 bg-brandLightBg/50 dark:bg-slate-800 text-sm text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-brandAccent" />
+                </div>
+              </div>
+
+              <div>
+                <label class="block text-xs font-semibold text-gray-700 dark:text-gray-300 mb-1">Subject</label>
+                <select class="w-full px-3.5 py-2 rounded-lg border border-purple-100 dark:border-slate-700 bg-brandLightBg/50 dark:bg-slate-800 text-sm text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-brandAccent">
+                  <option value="tvet">TVETA / Educational Engagement</option>
+                  <option value="tech">Software & Web Project Request</option>
+                  <option value="fashion">Custom Bespoke Fashion Order</option>
+                  <option value="books">Author & Publishing Query</option>
+                  <option value="other">General Inquiry</option>
+                </select>
+              </div>
+
+              <div>
+                <label class="block text-xs font-semibold text-gray-700 dark:text-gray-300 mb-1">Message</label>
+                <textarea rows="4" required placeholder="Write your message here..." class="w-full px-3.5 py-2 rounded-lg border border-purple-100 dark:border-slate-700 bg-brandLightBg/50 dark:bg-slate-800 text-sm text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-brandAccent"></textarea>
+              </div>
+
+              <button type="submit" class="w-full bg-brandDark hover:bg-brandPurple text-white font-semibold py-3 rounded-lg text-sm transition shadow-md flex items-center justify-center gap-2">
+                <i class="fa-solid fa-paper-plane"></i> Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-brandDark text-purple-200 py-12 border-t border-purple-900/50 font-subheading mt-auto">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 grid md:grid-cols-4 gap-8 mb-8">
+      <div class="space-y-3 md:col-span-2">
+        <span class="font-brand-title text-xl font-bold text-white tracking-wider block">ROSEMERCY OPONDO</span>
+        <p class="text-xs text-purple-300 max-w-md leading-relaxed">
+          TVETA Registered Home Economics Lecturer & Assessor, Full-Stack Software Engineer, Bespoke Fashion Designer, and Published Author based in Kenya.
+        </p>
+      </div>
+      <div>
+        <h4 class="text-xs font-tech-code font-bold uppercase tracking-wider text-amber-400 mb-3">Quick Navigation</h4>
+        <ul class="space-y-2 text-xs">
+          <li><a href="#educator" onclick="navTo('educator')" class="hover:text-white transition">TVETA & Education</a></li>
+          <li><a href="#tech" onclick="navTo('tech')" class="hover:text-white transition">Software Engineering</a></li>
+          <li><a href="#fashion" onclick="navTo('fashion')" class="hover:text-white transition">Bespoke Fashion</a></li>
+          <li><a href="#author" onclick="navTo('author')" class="hover:text-white transition">Books & Memoirs</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-xs font-tech-code font-bold uppercase tracking-wider text-amber-400 mb-3">Direct Contact</h4>
+        <ul class="space-y-2 text-xs">
+          <li><a href="mailto:rosemercyopondo0@gmail.com" class="hover:text-white transition">rosemercyopondo0@gmail.com</a></li>
+          <li><a href="https://wa.me/254114277839" target="_blank" class="hover:text-white transition">+254 114 277 839</a></li>
+          <li class="text-purple-400 pt-1">Nairobi & Kiambu, Kenya</li>
+        </ul>
+      </div>
+    </div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 pt-6 border-t border-purple-900/40 text-center text-xs text-purple-400 flex flex-col sm:flex-row justify-between items-center gap-2">
+      <p>&copy; 2026 Rosemercy Opondo. All rights reserved.</p>
+      <p class="font-tech-code text-[11px]">Rosemercy Develops · PWA Integrated Portal</p>
+    </div>
+  </footer>
+
+  <!-- CTA MODAL -->
+  <div id="ctaModal" class="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+    <div class="bg-white dark:bg-slate-900 rounded-2xl max-w-md w-full p-6 shadow-2xl border border-purple-100 dark:border-slate-800 space-y-4 font-subheading">
+      <div class="flex justify-between items-center border-b border-gray-100 dark:border-slate-800 pb-3">
+        <h3 id="modalTitle" class="font-heading text-lg font-bold text-brandDark dark:text-purple-200">Contact Rosemercy</h3>
+        <button onclick="closeCtaModal()" class="text-gray-400 hover:text-gray-600 dark:hover:text-white">
+          <i class="fa-solid fa-xmark text-lg"></i>
+        </button>
+      </div>
+      <div id="modalBody" class="space-y-4">
+        <!-- Dynamic injected content -->
+      </div>
+    </div>
+  </div>
+
+  <!-- JAVASCRIPT LOGIC -->
+  <script>
+    // --- Authentication Constants ---
+    const AUTH_USER = "ROMEAO";
+    const AUTH_PASS = "40110664";
+
+    // --- Initial Data Repositories ---
+    const initialTechProjects = [
+      {
+        id: 1,
+        title: "Nyawara Girls Web Platform",
+        category: "Tech",
+        desc: "Institutional administration and digital library tracking web system designed for Nyawara Girls Senior School.",
+        tags: ["React", "Node.js", "MySQL", "Tailwind CSS"],
+        image: "https://images.unsplash.com/photo-1501504905252-473c47e087f8?auto=format&fit=crop&w=600&q=80"
+      },
+      {
+        id: 2,
+        title: "Rosemercy Develops Portfolio Engine",
+        category: "Tech",
+        desc: "Offline-first Progressive Web App (PWA) portal featuring integrated local storage content manager.",
+        tags: ["JavaScript", "PWA", "Service Worker", "Tailwind CSS"],
+        image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=80"
+      },
+      {
+        id: 3,
+        title: "School Chess Tournament System",
+        category: "Tech",
+        desc: "Custom tournament fixture management application for scheduling regional secondary school chess competitions.",
+        tags: ["TypeScript", "React", "Tailwind CSS"],
+        image: "https://images.unsplash.com/photo-1529699211952-734e80c4d42b?auto=format&fit=crop&w=600&q=80"
+      }
+    ];
+
+    const initialGalleryItems = [
+      {
+        id: 101,
+        title: "Executive Bespoke Apparel",
+        category: "Fashion",
+        description: "Custom tailored women's executive wear with structural pattern drafting.",
+        image: "https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=600&q=80"
+      },
+      {
+        id: 102,
+        title: "Nyawara Senior Library System UI",
+        category: "Tech",
+        description: "Database dashboard interface for digital library tracking.",
+        image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=80"
+      },
+      {
+        id: 103,
+        title: "TVETA Home Economics CBET Session",
+        category: "Education",
+        description: "Practical instructional session in culinary techniques and food chemistry.",
+        image: "https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=600&q=80"
+      },
+      {
+        id: 104,
+        title: "School Chess Tournament Coaching",
+        category: "Education",
+        description: "Mentoring student chess players at localized high school tournament.",
+        image: "https://images.unsplash.com/photo-1580541832626-2a7131ee809f?auto=format&fit=crop&w=600&q=80"
+      }
+    ];
+
+    const booksData = [
+      {
+        title: "The Man Who Planted Trees",
+        subtitle: "A Memoir & Biography of JMG Opondo Ogeta",
+        published: "May 2026",
+        desc: "A rich biographical narrative detailing resilience, environmental stewardship, and family legacy. Authored as a daughter's tribute to JMG Opondo Ogeta.",
+        cover: "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=600&q=80"
+      },
+      {
+        title: "In My Dreams",
+        subtitle: "Literary Exploration & Psychological Reflections",
+        published: "2025",
+        desc: "An evocative literary work exploring the subconscious, human aspirations, resilience, and personal transformation through creative narrative.",
+        cover: "https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=600&q=80"
+      }
+    ];
+
+    const initialBlogPosts = [
+      {
+        id: 201,
+        title: "The Future of TVETA CBET Education in Kenya",
+        category: "Education",
+        date: "September 2026",
+        snippet: "How Competency-Based Education and Training (CBET) is transforming Home Economics into high-value vocational entrepreneurship."
+      },
+      {
+        id: 202,
+        title: "Building Offline-First PWAs with Vanilla JS & LocalStorage",
+        category: "Tech",
+        date: "August 2026",
+        snippet: "A deep dive into constructing lightweight admin dashboards and data persistence without heavy client frameworks."
+      },
+      {
+        id: 203,
+        title: "The Intersection of Textile Science and Precision Fitting",
+        category: "Fashion",
+        date: "July 2026",
+        snippet: "Why understanding fabric behavior under tension is critical for structural bespoke garment design."
+      }
+    ];
+
+    let currentBase64Image = '';
+
+    // --- LocalStorage Helpers ---
+    function getStoredItems() {
+      return JSON.parse(localStorage.getItem('pwa_items') || '[]');
+    }
+
+    function saveItemToStorage(item) {
+      const items = getStoredItems();
+      items.push(item);
+      localStorage.setItem('pwa_items', JSON.stringify(items));
+    }
+
+    function getStoredArticles() {
+      return JSON.parse(localStorage.getItem('admin_articles') || '[]');
+    }
+
+    function saveArticleToStorage(article) {
+      const articles = getStoredArticles();
+      articles.push(article);
+      localStorage.setItem('admin_articles', JSON.stringify(articles));
+    }
+
+    function deleteArticleFromStorage(id) {
+      const articles = getStoredArticles().filter(a => a.id !== id);
+      localStorage.setItem('admin_articles', JSON.stringify(articles));
+    }
+
+    // --- Admin Dashboard Authentication & Toggle ---
+    function toggleAdminPanel() {
+      const panel = document.getElementById('admin-panel');
+      panel.classList.toggle('hidden');
+      if (!panel.classList.contains('hidden')) {
+        panel.scrollIntoView({ behavior: 'smooth' });
+        checkAdminAuthStatus();
+      }
+    }
+
+    function checkAdminAuthStatus() {
+      const isLoggedIn = sessionStorage.getItem('adminLoggedIn') === 'true';
+      const loginScreen = document.getElementById('adminLoginScreen');
+      const dashboardScreen = document.getElementById('adminDashboardScreen');
+
+      if (isLoggedIn) {
+        loginScreen.classList.add('hidden');
+        dashboardScreen.classList.remove('hidden');
+        renderAdminArticlesList();
+      } else {
+        loginScreen.classList.remove('hidden');
+        dashboardScreen.classList.add('hidden');
+      }
+    }
+
+    function handleAdminLogin(e) {
+      e.preventDefault();
+      const user = document.getElementById('adminUsername').value.trim();
+      const pass = document.getElementById('adminPassword').value.trim();
+      const errorMsg = document.getElementById('adminLoginError');
+
+      if (user === AUTH_USER && pass === AUTH_PASS) {
+        sessionStorage.setItem('adminLoggedIn', 'true');
+        errorMsg.classList.add('hidden');
+        document.getElementById('adminLoginForm').reset();
+        checkAdminAuthStatus();
+      } else {
+        errorMsg.classList.remove('hidden');
+      }
+    }
+
+    function handleAdminLogout() {
+      sessionStorage.removeItem('adminLoggedIn');
+      checkAdminAuthStatus();
+    }
+
+    function handleArticleSubmit(e) {
+      e.preventDefault();
+      const title = document.getElementById('articleTitle').value;
+      const category = document.getElementById('articleCategory').value;
+      const content = document.getElementById('articleContent').value;
+
+      const newArticle = {
+        id: Date.now(),
+        title: title,
+        category: category,
+        date: new Date().toLocaleDateString('en-US', { month: 'long', year: 'numeric' }),
+        snippet: content
+      };
+
+      saveArticleToStorage(newArticle);
+      renderBlog('All');
+      renderAdminArticlesList();
+      alert('Article published successfully!');
+      document.getElementById('adminArticleForm').reset();
+    }
+
+    function deleteArticle(id) {
+      if (confirm("Are you sure you want to delete this article?")) {
+        deleteArticleFromStorage(id);
+        renderBlog('All');
+        renderAdminArticlesList();
+      }
+    }
+
+    function renderAdminArticlesList() {
+      const container = document.getElementById('adminArticleList');
+      if (!container) return;
+
+      const customArticles = getStoredArticles();
+      const allArticles = [...customArticles, ...initialBlogPosts];
+
+      container.innerHTML = '';
+      allArticles.forEach(a => {
+        const isCustom = customArticles.some(ca => ca.id === a.id);
+        const li = document.createElement('li');
+        li.className = "bg-white dark:bg-slate-800 p-3 rounded-lg border border-slate-200 dark:border-slate-700 flex justify-between items-center gap-4 text-xs";
+        li.innerHTML = `
+          <div>
+            <span class="font-bold text-brandDark dark:text-purple-200">${a.title}</span>
+            <span class="text-gray-400 text-[10px] ml-2">(${a.category} · ${a.date})</span>
+            <p class="text-gray-500 dark:text-gray-400 mt-0.5 line-clamp-1">${a.snippet}</p>
+          </div>
+          ${isCustom ? `
+            <button onclick="deleteArticle(${a.id})" class="bg-red-600 hover:bg-red-700 text-white font-bold px-2.5 py-1 rounded text-[11px] shrink-0 transition">
+              Delete
+            </button>
+          ` : `
+            <span class="text-[10px] font-tech-code text-gray-400 shrink-0">System Default</span>
+          `}
+        `;
+        container.appendChild(li);
+      });
+    }
+
+    // --- Image Upload Handling ---
+    const fileInput = document.getElementById('item-image-file');
+    const imagePreview = document.getElementById('image-preview');
+    const contentForm = document.getElementById('content-form');
+    const clearDataBtn = document.getElementById('clear-data-btn');
+
+    if (fileInput) {
+      fileInput.addEventListener('change', (e) => {
+        const file = e.target.files[0];
+        if (file) {
+          const reader = new FileReader();
+          reader.onload = function (event) {
+            currentBase64Image = event.target.result;
+            imagePreview.src = currentBase64Image;
+            imagePreview.style.display = 'block';
+          };
+          reader.readAsDataURL(file);
+        } else {
+          currentBase64Image = '';
+          imagePreview.style.display = 'none';
+        }
+      });
+    }
+
+    if (contentForm) {
+      contentForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const title = document.getElementById('item-title').value;
+        const category = document.getElementById('item-category').value;
+        const desc = document.getElementById('item-desc').value;
+
+        if (!currentBase64Image) {
+          alert('Please select an image file to upload.');
+          return;
+        }
+
+        const newItem = {
+          id: Date.now(),
+          title: title,
+          category: category,
+          description: desc,
+          image: currentBase64Image
+        };
+
+        saveItemToStorage(newItem);
+        renderGallery('All');
+        renderTechProjects();
+        alert('Content entry saved successfully to local storage!');
+
+        contentForm.reset();
+        imagePreview.style.display = 'none';
+        currentBase64Image = '';
+      });
+    }
+
+    if (clearDataBtn) {
+      clearDataBtn.addEventListener('click', () => {
+        if (confirm('Are you sure you want to clear all user-uploaded items and custom articles?')) {
+          localStorage.removeItem('pwa_items');
+          localStorage.removeItem('admin_articles');
+          renderGallery('All');
+          renderTechProjects();
+          renderBlog('All');
+          renderAdminArticlesList();
+          alert('Custom stored items cleared.');
+        }
+      });
+    }
+
+    // --- Dynamic Renderers ---
+    function renderGallery(filterCategory = 'All') {
+      const container = document.getElementById('galleryGridContainer');
+      if (!container) return;
+
+      const userItems = getStoredItems().map(item => ({
+        id: item.id,
+        title: item.title,
+        category: item.category || 'Gallery',
+        description: item.description,
+        image: item.image
+      }));
+
+      const combined = [...userItems, ...initialGalleryItems];
+      const filtered = filterCategory === 'All' ? combined : combined.filter(item => item.category === filterCategory);
+
+      container.innerHTML = '';
+      if (filtered.length === 0) {
+        container.innerHTML = '<p class="col-span-full text-xs text-gray-500 py-8 text-center">No gallery items found for this filter.</p>';
+        return;
+      }
+
+      filtered.forEach(item => {
+        const cardNode = document.createElement('div');
+        cardNode.className = "bg-white dark:bg-slate-900 border border-purple-100 dark:border-slate-800 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition flex flex-col";
+        cardNode.innerHTML = `
+          <div class="h-48 overflow-hidden bg-gray-100 dark:bg-slate-800 relative">
+            <img src="${item.image}" alt="${item.title}" class="w-full h-full object-cover hover:scale-105 transition duration-300" onerror="this.src='https://via.placeholder.com/300'" />
+            <span class="absolute top-2 right-2 bg-brandDark/80 text-white text-[10px] font-tech-code px-2 py-0.5 rounded backdrop-blur-sm">${item.category}</span>
+          </div>
+          <div class="p-4 flex-grow flex flex-col justify-between">
+            <div>
+              <h3 class="font-subheading text-sm font-bold text-brandDark dark:text-purple-200 mb-1">${item.title}</h3>
+              <p class="text-xs text-gray-600 dark:text-gray-400 leading-relaxed">${item.description}</p>
+            </div>
+          </div>
+        `;
+        container.appendChild(cardNode);
+      });
+    }
+
+    function filterGallery(cat) {
+      renderGallery(cat);
+    }
+
+    function renderTechProjects() {
+      const container = document.getElementById('techProjectsContainer');
+      if (!container) return;
+
+      const userTechItems = getStoredItems()
+        .filter(i => i.category === 'Tech')
+        .map(i => ({
+          id: i.id,
+          title: i.title,
+          desc: i.description,
+          tags: ["User Uploaded", "PWA Stored"],
+          image: i.image
+        }));
+
+      const combinedTech = [...userTechItems, ...initialTechProjects];
+      container.innerHTML = '';
+
+      combinedTech.forEach(item => {
+        const card = document.createElement('div');
+        card.className = "bg-white dark:bg-slate-900 border border-purple-100 dark:border-slate-800 rounded-xl overflow-hidden shadow-sm flex flex-col justify-between";
+        card.innerHTML = `
+          <div>
+            <div class="h-44 overflow-hidden bg-gray-100 dark:bg-slate-800">
+              <img src="${item.image}" alt="${item.title}" class="w-full h-full object-cover" onerror="this.src='https://via.placeholder.com/400x200'" />
+            </div>
+            <div class="p-5 space-y-3">
+              <h4 class="font-subheading font-bold text-brandDark dark:text-purple-200 text-base">${item.title}</h4>
+              <p class="text-xs text-gray-600 dark:text-gray-400 leading-relaxed">${item.desc}</p>
+              <div class="flex flex-wrap gap-1.5 pt-1">
+                ${item.tags.map(t => `<span class="bg-purple-50 dark:bg-slate-800 text-brandAccent dark:text-purple-300 border border-purple-100 dark:border-slate-700 text-[10px] font-tech-code px-2 py-0.5 rounded">${t}</span>`).join('')}
+              </div>
+            </div>
+          </div>
+          <div class="p-5 pt-0">
+            <button onclick="openCtaModal('whatsapp')" class="w-full bg-brandLightBg dark:bg-slate-800 hover:bg-purple-100 dark:hover:bg-slate-700 text-brandDark dark:text-purple-200 font-subheading text-xs font-semibold py-2 rounded-lg transition text-center border border-purple-200 dark:border-slate-700">
+              Inquire About System
+            </button>
+          </div>
+        `;
+        container.appendChild(card);
+      });
+    }
+
+    function renderBooks() {
+      const container = document.getElementById('booksContainer');
+      if (!container) return;
+      container.innerHTML = '';
+
+      booksData.forEach(b => {
+        const div = document.createElement('div');
+        div.className = "bg-white dark:bg-slate-900 border border-purple-100 dark:border-slate-800 rounded-2xl p-6 shadow-sm flex flex-col md:flex-row gap-6 items-center";
+        div.innerHTML = `
+          <img src="${b.cover}" alt="${b.title}" class="w-32 h-44 object-cover rounded-lg shadow-md shrink-0" onerror="this.src='https://via.placeholder.com/150x200'" />
+          <div class="space-y-3 text-center md:text-left">
+            <div>
+              <span class="text-[10px] font-tech-code text-brandAccent dark:text-purple-400 font-semibold uppercase tracking-wider">${b.published}</span>
+              <h3 class="font-heading text-xl font-bold text-brandDark dark:text-purple-200">${b.title}</h3>
+              <p class="text-xs font-subheading text-purple-900 dark:text-purple-300 font-medium">${b.subtitle}</p>
+            </div>
+            <p class="text-xs text-gray-600 dark:text-gray-400 leading-relaxed">${b.desc}</p>
+            <button onclick="openCtaModal('whatsapp')" class="bg-brandDark dark:bg-purple-900 hover:bg-brandPurple text-white text-xs font-subheading font-semibold px-4 py-2 rounded-lg transition inline-flex items-center gap-1.5">
+              <i class="fa-solid fa-book-open"></i> Request Book Copy
+            </button>
+          </div>
+        `;
+        container.appendChild(div);
+      });
+    }
+
+    function renderBlog(filter = 'All') {
+      const container = document.getElementById('blogGridContainer');
+      if (!container) return;
+      container.innerHTML = '';
+
+      const customArticles = getStoredArticles();
+      const allArticles = [...customArticles, ...initialBlogPosts];
+
+      const filtered = filter === 'All' ? allArticles : allArticles.filter(p => p.category === filter);
+      filtered.forEach(p => {
+        const article = document.createElement('article');
+        article.className = "bg-white dark:bg-slate-900 border border-purple-100 dark:border-slate-800 rounded-xl p-6 shadow-sm space-y-3 flex flex-col justify-between";
+        article.innerHTML = `
+          <div>
+            <div class="flex justify-between items-center text-[10px] font-tech-code text-gray-500 mb-2">
+              <span class="bg-purple-50 dark:bg-slate-800 text-brandAccent dark:text-purple-300 px-2 py-0.5 rounded font-semibold">${p.category}</span>
+              <span>${p.date}</span>
+            </div>
+            <h3 class="font-subheading font-bold text-base text-brandDark dark:text-purple-200 mb-2">${p.title}</h3>
+            <p class="text-xs text-gray-600 dark:text-gray-400 leading-relaxed">${p.snippet}</p>
+          </div>
+          <button onclick="openCtaModal('whatsapp')" class="text-xs font-subheading font-semibold text-brandAccent dark:text-purple-400 hover:underline pt-2 text-left">
+            Read Full Article & Order Insights &rarr;
+          </button>
+        `;
+        container.appendChild(article);
+      });
+    }
+
+    function filterBlog(cat) {
+      renderBlog(cat);
+    }
+
+    // --- Navigation & View Control ---
+    function navTo(sectionId) {
+      const sections = document.querySelectorAll('.view-section');
+      sections.forEach(sec => sec.classList.add('hidden'));
+
+      const target = document.getElementById(`sec-${sectionId}`);
+      if (target) {
+        target.classList.remove('hidden');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+
+      const mobileMenu = document.getElementById('mobileMenu');
+      if (mobileMenu && !mobileMenu.classList.contains('hidden')) {
+        mobileMenu.classList.add('hidden');
+      }
+    }
+
+    function toggleMobileMenu() {
+      const mobileMenu = document.getElementById('mobileMenu');
+      if (mobileMenu) {
+        mobileMenu.classList.toggle('hidden');
+      }
+    }
+
+    // --- Dark Mode Switcher ---
+    function toggleDarkMode() {
+      const html = document.documentElement;
+      const themeText = document.getElementById('themeToggleText');
+      if (html.classList.contains('dark')) {
+        html.classList.remove('dark');
+        if (themeText) themeText.textContent = 'Light';
+        localStorage.setItem('theme', 'light');
+      } else {
+        html.classList.add('dark');
+        if (themeText) themeText.textContent = 'Dark';
+        localStorage.setItem('theme', 'dark');
+      }
+    }
+
+    if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.classList.add('dark');
+      const themeText = document.getElementById('themeToggleText');
+      if (themeText) themeText.textContent = 'Dark';
+    }
+
+    // --- Modal Contact Handling ---
+    function openCtaModal(type) {
+      const modal = document.getElementById('ctaModal');
+      const title = document.getElementById('modalTitle');
+      const body = document.getElementById('modalBody');
+      if (!modal || !title || !body) return;
+
+      if (type === 'whatsapp') {
+        title.textContent = "Connect on WhatsApp";
+        body.innerHTML = `
+          <p class="text-xs text-gray-600 dark:text-gray-300">Start a direct WhatsApp conversation with Rosemercy Opondo for fast inquiries regarding lecturing, software development, or custom fashion orders.</p>
+          <a href="https://wa.me/254114277839" target="_blank" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-3 rounded-lg text-xs transition flex items-center justify-center gap-2">
+            <i class="fa-brands fa-whatsapp text-base"></i> Launch WhatsApp (+254 114 277 839)
+          </a>
+        `;
+      } else if (type === 'phone') {
+        title.textContent = "Direct Cellular Call";
+        body.innerHTML = `
+          <p class="text-xs text-gray-600 dark:text-gray-300">Call Rosemercy directly on cellular line for immediate consultations during working hours.</p>
+          <a href="tel:+254114277839" class="w-full bg-brandDark dark:bg-purple-900 hover:bg-brandPurple text-white font-semibold py-3 rounded-lg text-xs transition flex items-center justify-center gap-2">
+            <i class="fa-solid fa-phone text-sm"></i> Call +254 114 277 839
+          </a>
+        `;
+      }
+
+      modal.classList.remove('hidden');
+    }
+
+    function closeCtaModal() {
+      const modal = document.getElementById('ctaModal');
+      if (modal) modal.classList.add('hidden');
+    }
+
+    function handleFormSubmit(e) {
+      e.preventDefault();
+      alert("Thank you for your message! Rosemercy Opondo will respond to your email shortly.");
+      e.target.reset();
+    }
+
+    // --- AI Widget Logic ---
+    function handleAiKeyPress(e) {
+      if (e.key === 'Enter') {
+        generateAiResponse();
+      }
+    }
+
+    function generateAiResponse() {
+      const input = document.getElementById('aiPromptInput');
+      const output = document.getElementById('aiOutputText');
+      if (!input || !output || !input.value.trim()) return;
+
+      const query = input.value.toLowerCase().trim();
+      let response = "";
+
+      if (query.includes('tech') || query.includes('stack') || query.includes('code') || query.includes('developer')) {
+        response = "Rosemercy is a Full-Stack Software Developer trained at Moringa School. Her core tech stack includes React, Next.js, TypeScript, Tailwind CSS, Node.js, Express, Python, and SQL databases.";
+      } else if (query.includes('tvet') || query.includes('education') || query.includes('teach') || query.includes('school')) {
+        response = "Rosemercy is a TVETA Registered Tutor with a B.Ed in Home Economics from Kenyatta University. She delivers KNQA Level 5 & 6 CBET modules including Food & Beverage, Nutrition, and Garment Construction.";
+      } else if (query.includes('fashion') || query.includes('cloth') || query.includes('dress') || query.includes('design')) {
+        response = "Rosemercy offers bespoke fashion design services including precision pattern drafting, executive official wear tailoring, custom dresses, and school/institutional uniform designs.";
+      } else if (query.includes('book') || query.includes('author') || query.includes('memoir')) {
+        response = "Rosemercy has authored published literary works including 'The Man Who Planted Trees' (a biography/memoir dedicated to JMG Opondo Ogeta) and 'In My Dreams'.";
+      } else if (query.includes('contact') || query.includes('phone') || query.includes('email') || query.includes('location')) {
+        response = "You can contact Rosemercy at rosemercyopondo0@gmail.com or via WhatsApp/Call at +254 114 277 839. She is based in Nairobi & Kiambu, Kenya.";
+      } else {
+        response = `Thanks for asking! Rosemercy Opondo is a TVETA Tutor, Software Developer, Fashion Designer, and Author. Feel free to contact her directly via WhatsApp at +254 114 277 839!`;
+      }
+
+      output.textContent = `"${response}"`;
+      input.value = '';
+    }
+
+    // --- Dynamic PWA Prompt Trigger ---
+    let deferredPrompt;
+    window.addEventListener('beforeinstallprompt', (e) => {
+      e.preventDefault();
+      deferredPrompt = e;
+      const pwaBtn = document.getElementById('pwaInstallBtn');
+      if (pwaBtn) pwaBtn.classList.remove('hidden');
+    });
+
+    function triggerPwaInstall() {
+      if (deferredPrompt) {
+        deferredPrompt.prompt();
+        deferredPrompt.userChoice.then((choiceResult) => {
+          if (choiceResult.outcome === 'accepted') {
+            console.log('User accepted PWA install');
+          }
+          deferredPrompt = null;
+        });
+      }
+    }
+
+    // --- On DOM Load Initializations ---
+    document.addEventListener('DOMContentLoaded', () => {
+      renderGallery('All');
+      renderTechProjects();
+      renderBooks();
+      renderBlog('All');
+    });
+  </script>
+</body>
+</html>
